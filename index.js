@@ -17,7 +17,7 @@ var neAuto = {
     expressJwt: require('express-jwt'),
     passportFacebook: require('passport-facebook'),
     passportLocal: require('passport-local'),
-    bcrypt: require('bcrypt'),
+    bcrypt: require('bcrypt-nodejs'),
     babel: require('babel'),
     webpackStream: require('webpack-stream'),
     gulp: require('gulp'),
@@ -38,7 +38,6 @@ var neAuto = {
     neAdmin: require('ne-admin'),
     neAuth: require('ne-auth'),
     neGulp: require('ne-gulp')
-
 
 };
 
