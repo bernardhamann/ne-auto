@@ -57,15 +57,10 @@ var neAuto = {
      "webpack": "^1.12.1",
      "webpack-stream": "^2.1.1"
 
-
-
-
     */
 
-
-
-
     /*
+
     //External Modules
     express: require('express'),
     cors: require("cors"),
@@ -101,6 +96,7 @@ var neAuto = {
     neAdmin: require('ne-admin'),
     neAuth: require('ne-auth'),
     neGulp: require('ne-gulp')
+
     */
 
 };

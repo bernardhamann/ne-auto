@@ -18,11 +18,20 @@ Dependencies
 - DR Remove Dependency: A  dependency is removed from the package
 - DU Update Dependency: A dependency is updated in the package
 
+
+## 1.3.1
+
+Release date : 20151021
+
+Restart the package
+
+
+
 ## 1.3.0
 
 Release date : 20151021
 
-Reset the package, do not use this package.
+Reset the package.
 
 
 ## 1.2.0
