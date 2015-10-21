@@ -1,5 +1,14 @@
 # ne-auto (Node Engine Auto)
 
+
+Reset the package, do not use this package.
+Reset the package, do not use this package.
+Reset the package, do not use this package.
+Reset the package, do not use this package.
+Reset the package, do not use this package.
+
+
+
 ## Inputs / Outputs
 
 ### neAuto.server(dirName, optionsObject)
