@@ -6,11 +6,10 @@ var bodyParser = require("body-parser");
 var cookieParser = require('cookie-parser');
 var morgan = require('morgan');
 
-var mongoose = require('mongoose');
+// var mongoose = require('mongoose');
 var passport = require ('passport');
 
 var neAuth = require ('ne-auth');
-var neData = require('ne-data');
 var neServer = require('ne-server');
 var neRender = require('ne-render');
 
@@ -45,8 +44,8 @@ var serverConfig = function(dirName, optionsObject){
     var appMeta = require(neCompilePathForAppMeta);
     var neCompilePathForRoutes = neCompilePath + 'routes';
     var routes = require(neCompilePathForRoutes);
-    var neCompilePathForDataRef = neCompilePath + 'dataRef';
-    var dataRef = require(neCompilePathForDataRef);
+    //var neCompilePathForDataRef = neCompilePath + 'dataRef';
+    //var dataRef = require(neCompilePathForDataRef);
 
     var server = serverInit(port);
 
@@ -75,20 +74,13 @@ var serverConfig = function(dirName, optionsObject){
 
     var cacheTime = optionsObject.cacheTime;
 
-    console.log('');
-    console.log('');
-    console.log('neAuto serverConfig: cacheTime');
-    console.log(cacheTime);
-    console.log('');
-    console.log('');
-
     neServer.static(server, dirName, cacheTime);
 
     ///////////////
     // Database
     ///////////////
 
-    mongoose.connect(process.env.MONGO_URL);
+    // mongoose.connect(process.env.MONGO_URL);
 
     ///////////////
     // Authentication
@@ -110,7 +102,7 @@ var serverConfig = function(dirName, optionsObject){
     // Data
     ///////////////
 
-    neData.routesConfig(server, dirName);
+    // neData.routesConfig(server, dirName);
 
     //////////////////////
     // Routes
@@ -123,7 +115,7 @@ var serverConfig = function(dirName, optionsObject){
     // Rendering React with React-Router on the server with Pre-Render Data from API's
     ////////////////////////////////////////////////////////////
 
-    neRender.serverRender(server, appMeta, routes, dataRef);
+    neRender.serverRender(server, appMeta, routes);
 
     ////////////////////////////////////////////////////////////
     // ne-auth custom error handling

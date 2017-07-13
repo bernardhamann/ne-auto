@@ -20,6 +20,18 @@ Dependencies
 
 
 
+## 1.4.2
+
+[DR] Removed ne-data old implimentation
+
+
+## 1.3.3
+
+Release date : Not Released
+
+[CO] serverConfig
+- Removed cacheTime console log statement
+
 
 ## 1.3.2
 
